@@ -1,0 +1,21 @@
+<div>
+  <p>Please fill the following form</p>
+  <form>
+    First name:<br>
+      <input ng-init="forminput.fname='first name'" ng-model="forminput.fname" ><br>
+    Last name:<br>
+      <input ng-init="forminput.lname='last name'" ng-model="forminput.lname" ><br>
+    Favorite Color:<br>
+      <input ng-init="forminput.FavColor='favorite color'" ng-model="forminput.FavColor" ><br>
+    Favorite City:<br>
+      <input ng-init="forminput.FavCity='favorite city'" ng-model="forminput.FavCity" ><br>
+    Phone Number:<br>
+      <input ng-init="forminput.PNumber='phone number'" ng-model="forminput.PNumber" ><br>
+    Gender:<br>
+      <input ng-init="forminput.Gender='gender'" ng-model="forminput.Gender" ><br>
+    Age:<br>
+      <input ng-init="forminput.Age='age'" ng-model="forminput.Age" ><br>
+
+    <button ng-click="callNotify(forminput);">SUBMIT</button>
+  </form>
+</div>
