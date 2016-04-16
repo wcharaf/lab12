@@ -17,7 +17,7 @@ app.factory('FormService', function(){
     valueGetter: function(vals) {
       storedValues= vals;
       console.log(FormData);
-    }
+    },
     valueSetter: function() {
       return FormData;
     }
