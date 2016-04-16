@@ -1,8 +1,8 @@
 var app= angular.module('FormAndDisplay');
 
-app.controller('formcontroller', function(FormService){
-  function callNotify(forminput) {
-    FormService();
+app.controller('formcontroller', ['FormService',function($scope,FormService){
+  $scope.callNotify = function (){
+    FormService.valueGetter();
   }
 
-});
+}]);
